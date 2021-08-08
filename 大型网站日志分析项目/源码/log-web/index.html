@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web日志统计分析</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        #page-wrapper {
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        </div>
+        <div class="wrapper wrapper-content">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="widget style1 navy-bg">
+                        <div class="row">
+                            <div class="col-4">
+                                <i class="fa fa-cloud fa-5x"></i>
+                            </div>
+                            <div class="col-8 text-right">
+                                <span> IP总数 </span>
+                                <h2 class="font-bold" id="ips">8888 个</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="widget style1 lazur-bg">
+                        <div class="row">
+                            <div class="col-4">
+                                <i class="fa fa-envelope-o fa-5x"></i>
+                            </div>
+                            <div class="col-8 text-right">
+                                <span> 页面统计数 </span>
+                                <h2 class="font-bold" id="pages">8888 个</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="widget style1 yellow-bg">
+                        <div class="row">
+                            <div class="col-4">
+                                <i class="fa fa-bell fa-5x"></i>
+                            </div>
+                            <div class="col-8 text-right">
+                                <span> 其他统计 </span>
+                                <h2 class="font-bold">8888 个</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="widget style1 red-bg">
+                        <div class="row">
+                            <div class="col-4">
+                                <i class="fa fa-envelope-o fa-5x"></i>
+                            </div>
+                            <div class="col-8 text-right">
+                                <span> 其他统计 </span>
+                                <h2 class="font-bold">8888 个 </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>访问前10的IP</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <div id="top10ip" style="height: 300px"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>访问前10的页面</h5>
+                        </div>
+                        <div class="ibox-content">
+                                <div id="top10page" style="height: 300px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>连续7日新增用户数</h5>
+                        </div>
+                        <div class="ibox-content">
+                                <div id="day7add" style="height: 300px"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>最近7日登陆用户数</h5>
+                        </div>
+                        <div class="ibox-content">
+                                <div id="day7login" style="height: 300px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+<!-- Mainly scripts -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/echars/echarts.min.js"></script>
+<script src="js/macarons.js"></script>
+<!-- Sweet alert -->
+<script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+<script src="index.js"></script>
+</html>
